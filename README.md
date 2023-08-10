@@ -24,11 +24,11 @@ Sub stock_analysis()
         ws.Range("J1").Value = "Yearly Change"
         ws.Range("K1").Value = "Percent Change"
         ws.Range("L1").Value = "Total Stock Volume"
-        ws.Range("I1").Value = "Ticker"
+        ws.Range("P1").Value = "Ticker"
         ws.Range("Q1").Value = "Value"
-        ws.Range("Q2").Value = "Greatest % Increase"
-        ws.Range("Q3").Value = "Greatest % Decrease"
-        ws.Range("Q4").Value = "Greatest Total Volume"
+        ws.Range("O2").Value = "Greatest % Increase"
+        ws.Range("O3").Value = "Greatest % Decrease"
+        ws.Range("O4").Value = "Greatest Total Volume"
         rowCount = ws.Cells(Rows.Count, "A").End(xlUp).Row
         For rowIndex = 2 To rowCount
             If ws.Cells(rowIndex + 1, 1).Value <> ws.Cells(rowIndex, 1).Value Then
